@@ -30,7 +30,8 @@
 
 class WebSocketsClient: private WebSockets {
     public:
-
+        String protocol = "arduino";
+        
         typedef void (*WebSocketClientEvent)(WStype_t type, uint8_t * payload, size_t length);
 
         WebSocketsClient(void);
